@@ -1,0 +1,443 @@
+body{
+    background-color: #ECEEED; 
+    font-family: "Urbanist", sans-serif;
+}  
+
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #ECEEED;
+  border-radius: .3rem;
+} 
+h3 {
+font-size: 40px; 
+padding-top: 40px; 
+padding-bottom: 40px;
+}
+.box {
+    background-image: url(/assets/img/Perfil.png);  
+background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+ height: 450px;  
+width: 450px;
+display: flex; 
+align-items: end; 
+}  
+ p {
+  text-align: left;
+}   
+.boton{ 
+   width: 150px;
+}  
+.boton a{
+  text-decoration: none; 
+  color: rgba(255, 255, 255, 0);
+ background-color: black; 
+ width: 150px; 
+ display: flex;    
+ flex-flow:row;
+ justify-content: space-around;   
+ align-items: center;
+ padding-left: 20px;   
+ padding-right: 20px;  
+ padding-top: 15px; 
+ padding-bottom: 15px;
+ border-radius: 100px; 
+ margin-bottom: 45px;  
+ margin-left: 5px;
+ height: 56px; 
+ width: 56px; 
+ transition: ease-in-out 0.1s; 
+ font-size: 0;   
+   
+ }     
+ 
+ .boton  a:hover{  
+    font-size: 16px;   
+   
+    transform: scale(1);
+    text-decoration: none; 
+    color: rgb(255, 255, 255);
+   background-color: black; 
+   width: 150px; 
+   display: flex;    
+   flex-flow:row;
+   justify-content: space-around;   
+   align-items: center;
+   padding-left: 20px;   
+   padding-right: 20px;  
+   padding-top: 15px; 
+   padding-bottom: 15px;
+   border-radius: 100px; 
+   margin-bottom: 35px;  
+   margin-left: 5px;
+   width: 150px; 
+   transition: ease-in-out 0.1s;   
+  
+
+   }    
+   
+   
+
+
+
+ 
+ .boxi{
+   gap: 1em; 
+   justify-content: center;
+   }   
+   .boxi .icon{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  border: 1px solid black; 
+  padding: 15px; 
+  border-radius: 100%; 
+  transition: ease-in-out 0.3s;
+    }    
+    .boxi .icon:hover{
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      border: 1px solid rgba(0, 0, 0, 0); 
+      padding: 15px; 
+      border-radius: 100%; 
+       background-color: white; 
+       transition: ease-in-out 0.3s;
+        }     
+
+    
+   
+    
+.s1{
+        flex-direction: row-reverse;
+          }   
+          
+          
+          .ss1{
+         justify-content: end;
+              }  
+    
+          .texto h1 {
+               font-size: 80px; 
+               text-align: left;
+          }  
+          .texto p {
+            text-align: right;
+       }   
+       .boxi{
+      display: flex; 
+      justify-content: start;
+   }    
+
+
+
+
+      body {
+        margin: 0;
+        padding: 0;
+        height: 200vh; /* Para simular una página larga */
+        overflow-x: hidden; /* Evita el desplazamiento horizontal de la página */
+    }
+    
+    .image-container {
+        width: 100%;
+        height: 300px; /* Ajusta la altura según tu diseño */
+        overflow: hidden; /* Oculta la parte de la imagen que se sale del contenedor */
+        /* Coloca la imagen detrás del contenido */
+    }
+    
+    .scrolling-image {
+        width: 200%; /* Doble del tamaño para permitir el bucle de desplazamiento */
+        height: 100%;
+        background-image: url('/assets/img/slider.png');
+        background-repeat: repeat-x; /* Repite la imagen en el eje X */
+        background-size: contain; /* Ajusta el tamaño de la imagen al contenedor */
+        transform: translateX(0); /* Inicia sin desplazamiento */
+        transition: transform 0.1s linear; /* Suaviza el movimiento */ 
+        z-index: 1;
+    } 
+
+
+
+
+    @media (max-width: 1060px) { 
+      .box {
+          background-image: url(/assets/img/Perfil.png);  
+      background-repeat: no-repeat;
+          background-size: contain; 
+          background-position: center; 
+       height: 390px;  
+      width: 350px;
+      display: flex; 
+      align-items: end; 
+      }  
+  
+      .s1{
+          flex-direction: row-reverse;
+            }    
+           
+        .texto h1 {
+          font-size: 60px; 
+          text-align: center;
+     }  
+     .texto p {
+       text-align: center;
+  }   
+
+  .boxi{
+      gap: 1em; 
+      justify-content: center;
+      }    
+      .ss1{
+          justify-content: center;
+               }   
+
+
+               .boton a{ 
+                  font-size: 16px; 
+                  text-decoration: none; 
+                  color: rgb(255, 255, 255);
+                 background-color: black; 
+                 width: 0px; 
+                 display: flex;    
+                 flex-flow:row;
+                 justify-content: space-around;   
+                 align-items: center;
+                 padding-left: 20px;   
+                 padding-right: 20px;  
+                 padding-top: 15px; 
+                 padding-bottom: 15px;
+                 border-radius: 100px; 
+                 margin-bottom: 45px;  
+                 margin-left: 5px;
+                 height: 55px; 
+                 width: 150px; 
+                 transition: ease-in-out 0.1s; 
+       
+                   
+                 }     
+                 
+                 .boton  a:hover{  
+                    font-size: 16px;   
+                   
+                    width: 150px; 
+                    text-decoration: none; 
+                    color: rgb(255, 255, 255);
+                   background-color: black; 
+                   width: 150px; 
+                   display: flex;    
+                   flex-flow:row;
+                   justify-content: space-around;   
+                   align-items: center;
+                   padding-left: 20px;   
+                   padding-right: 20px;  
+                   padding-top: 15px; 
+                   padding-bottom: 15px;
+                   border-radius: 100px; 
+                   width: 150px; 
+                   transition: ease-in-out 0.1s;   
+                  
+                
+                   }   
+               
+                   
+                .scrolling-image {
+                  width: 200%; /* Doble del tamaño para permitir el bucle de desplazamiento */
+                  height: 70%;
+                  background-image: url('/assets/img/slider.png');
+                  background-repeat: repeat-x; /* Repite la imagen en el eje X */
+                  background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+                  transform: translateX(0); /* Inicia sin desplazamiento */
+                  transition: transform 0.1s linear; /* Suaviza el movimiento */
+              }  
+
+              h3 {
+                font-size: 35px; 
+                padding-top: 0px; 
+padding-bottom: 20px;
+                } 
+                .mt-5, .my-5 {
+                  margin-top: 0rem !important;
+              }
+          
+
+    }    
+
+
+    .card {
+      border-radius: 40px; 
+      max-width: 350px;  
+      height: 500px;
+      margin-top: 20px; 
+      border: none;
+  }   
+  .blad {
+    max-width: 320px;
+    height: 310px; 
+    background-color:#DADADA ; 
+    border-radius: 40px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}     
+  .blad img{
+    max-width: 320px; 
+    border-radius: 50px;
+}     
+.blade img{
+  max-width: 315px; 
+  border-radius: 40px;
+}    
+
+.text {
+ padding: 10px;
+}   
+.text h2 {
+font-size: 20px;
+ }  
+@media (min-width: 576px) {
+  .col-sm-6 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 100%;
+  } 
+
+
+} 
+
+@media (max-width: 990px) {
+ 
+
+  .Content{
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    content: center;
+} 
+}
+    
+  .portafolio{
+ background-color: white; 
+ text-align: center; 
+ padding: 40px; 
+ border-radius: 30px;
+} 
+.portafolio .btnOne a{ 
+  background-color: #AE46FF; 
+  color: white; 
+  text-decoration: none; 
+  border-radius: 200px;
+  padding-left: 30px; 
+  padding-right:30px; 
+  padding-top: 16px; 
+  padding-bottom: 16px; 
+ border: 2px solid white;  
+ -webkit-box-shadow: 10px 10px 131px -111px rgba(0,0,0,0.54);
+-moz-box-shadow: 10px 10px 131px -111px rgba(0,0,0,0.54);
+box-shadow: 10px 10px 131px -111px rgba(0,0,0,0.54);
+
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 2px;
+
+
+ }  
+
+
+ .portafolio .II a{ 
+  background-color: #E614A4; 
+ }  
+ .portafolio .III a{ 
+  background-color: #FFB444; 
+ }    
+ .portafolio .IV a{ 
+  background-color: #F50509; 
+ }    
+ .portafolio .VI a{ 
+  background-color: #ffffff;  
+  border: 2px solid black;  
+  color: black;
+ }   
+ 
+
+ .portafolio .V a{  
+  margin-top: 30px;
+  background-color: #000000;  
+  border: 2px solid black;  
+  color: rgb(255, 255, 255);  
+  width: 200px; 
+  gap: 1em;
+ }   
+ .portafolio .V a svg{ 
+width: 20px; 
+height: 20px; 
+fill: white;
+ }    
+
+
+
+
+ .Dash {  
+  margin-top: 30px;
+  display: flex; 
+  flex-flow: row wrap;  
+  height: 150px; 
+  justify-content: center; 
+
+
+ }  
+
+ .port{    
+  margin-top: 20px;
+max-width: 100%; 
+height: 300px; 
+background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+
+ }  
+
+
+ footer { 
+  background-color: #ECEEED; 
+}
+
+ footer .input-container {
+  position: relative;
+  max-width: 250px;
+}
+
+footer .input-container input { 
+  max-width: 250px; 
+  background-color: white; 
+  border-radius: 200px;
+ border: none;
+  padding-left: 30px; /* Espacio para el icono */
+  height: 55px; 
+  transition: ease-in-out 0.3s;
+} 
+ .in:focus { 
+ 
+ border: none;
+ 
+}
+
+.input-container .icon {
+  position: absolute;
+  top: 50%;
+  left: 175px;
+  transform: translateY(-50%); 
+  
+  pointer-events: none; /* Para que el icono no interfiera con el input */
+} 
+.d-flexx { 
+  display: flex;
+  flex-flow: column; /* Para que el icono no interfiera con el input */ 
+  align-items: center;
+}  
+.d-flexx p { 
+  font-size: 12px;
+} 
