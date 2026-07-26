@@ -63,9 +63,9 @@
 }
 
 .floating-navbar .nav-item.active {
-    background: #0f172a;
-    color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+    background: rgba(0, 0, 0, 0.06);
+    color: #0f172a;
+    font-weight: 600;
 }
 
 /* Prevent footer from hiding under floating tab bar */
