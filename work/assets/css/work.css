@@ -980,11 +980,21 @@ body {
 
 .cta-final-buttons {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.9rem;
     margin-top: 2rem;
-    padding-bottom: 2.5rem !important; /* Extra bottom padding requested */
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2.5rem !important;
+}
+
+.cta-final-buttons .btn {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .cta-final-buttons .btn-primary {
