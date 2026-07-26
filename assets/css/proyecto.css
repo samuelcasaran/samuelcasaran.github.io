@@ -170,6 +170,58 @@
     letter-spacing: -0.2px;
 }
 
+.metrix-showcase-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    align-items: start;
+}
+
+.mobile-product-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.mobile-product-screen {
+    margin: 0;
+}
+
+.mobile-product-screen img {
+    width: 100%;
+    aspect-ratio: 590 / 1280;
+    object-fit: cover;
+}
+
+.metrix-screen {
+    margin: 0;
+}
+
+.metrix-screen img {
+    width: 100%;
+    aspect-ratio: 590 / 1280;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .metrix-showcase-grid,
+    .mobile-product-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .mobile-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 /* Proceso */
 .project-process {
     padding: 8rem 8%;
@@ -495,4 +547,3 @@
         justify-content: center;
     }
 }
-

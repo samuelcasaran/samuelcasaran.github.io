@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metrix — Caso de Estudio Product Design · Samuel Casaran</title>
+    <meta name="description" content="Caso de estudio de Metrix: Aplicación móvil para ejecutar y supervisar rondas operativas geolocalizadas mediante mapas e incidencias en terreno.">
+    <link rel="icon" type="image/png" href="../../../assets/img/Favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/proyecto.css">
+    <link rel="stylesheet" href="../../assets/css/work.css">
+</head>
+<body style="background:#ffffff;">
+
+    <!-- Botón Volver -->
+    <a href="../../#portfolio" class="back-button" title="Volver al portafolio">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <div class="project-hero-text">
+                <span class="modal-cat-tag">Mobile · Map Experience · Product Design</span>
+                <h1 style="margin-top: 1rem;">Metrix</h1>
+                <p class="project-type">Operaciones y rondas geolocalizadas en terreno</p>
+                <p style="font-size:0.88rem; color:#64748b; margin-top:0.4rem;">Participación adicional: implementación móvil en React Native / Expo.</p>
+                
+                <div class="project-quick-info">
+                    <div class="quick-info-item">
+                        <span class="info-label">Mi Rol</span>
+                        <span class="info-value">Product Designer</span>
+                    </div>
+                    <div class="quick-info-item">
+                        <span class="info-label">Categoría</span>
+                        <span class="info-value">Mobile / Operations / Maps</span>
+                    </div>
+                    <div class="quick-info-item">
+                        <span class="info-label">Stack</span>
+                        <span class="info-value">Figma, React Native, Expo, Mapbox</span>
+                    </div>
+                    <div class="quick-info-item">
+                        <span class="info-label">Enfoque</span>
+                        <span class="info-value">UX de Mapas &amp; Bottom Sheets</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-hero-mockup">
+            <img src="../../assets/img/portfolio/metrix/portada-metrix.png" alt="Portada del caso Metrix con las pantallas de acceso, panel principal y ruta geolocalizada">
+        </div>
+    </section>
+
+    <!-- Contexto y Problema -->
+    <section class="project-overview">
+        <div class="overview-columns">
+            <div class="overview-column">
+                <h3>El Contexto</h3>
+                <p>Metrix centraliza rondas, puntos geográficos, incidencias y herramientas de seguimiento dentro de una experiencia móvil basada en mapas para personal operativo en campo.</p>
+            </div>
+            <div class="overview-column">
+                <h3>El Problema</h3>
+                <p>Los operadores necesitaban visualizar su ubicación, comprender el progreso de una ronda y acceder rápidamente a puntos, incidencias y capas del mapa sin abandonar la tarea principal.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pantallas del Producto -->
+    <section class="project-showcase">
+        <h2 class="showcase-title">Experiencia móvil de Metrix</h2>
+        <div class="metrix-showcase-grid">
+            <figure class="showcase-item metrix-screen">
+                <img src="../../assets/img/portfolio/metrix/login.jpg" alt="Pantalla de inicio de sesión de Metrix" loading="lazy">
+                <figcaption class="showcase-caption">Acceso simple y directo a la operación.</figcaption>
+            </figure>
+            <figure class="showcase-item metrix-screen">
+                <img src="../../assets/img/portfolio/metrix/dashboard.jpg" alt="Panel principal con metas del día en Metrix" loading="lazy">
+                <figcaption class="showcase-caption">Resumen operativo, metas diarias y accesos rápidos.</figcaption>
+            </figure>
+            <figure class="showcase-item metrix-screen">
+                <img src="../../assets/img/portfolio/metrix/mapa-ronda.jpg" alt="Mapa de Metrix con una ronda geolocalizada" loading="lazy">
+                <figcaption class="showcase-caption">Navegación de rondas y seguimiento de puntos en terreno.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Mi Rol & Decisiones de Diseño -->
+    <section class="project-process">
+        <div class="showcase-title" style="margin-bottom:3rem;text-align:left;max-width:1200px;margin-left:auto;margin-right:auto;">Mi Rol &amp; Decisiones de Diseño</div>
+        <div class="process-steps">
+            <div class="process-step-item">
+                <div class="step-number">01</div>
+                <h3>El mapa como superficie principal</h3>
+                <p>Uso del mapa interactivo como canvas central para minimizar cambios de pantalla durante la tarea operativa.</p>
+            </div>
+            <div class="process-step-item">
+                <div class="step-number">02</div>
+                <h3>Controles vía Bottom Sheet</h3>
+                <p>Presentación de opciones secundarias y detalles de puntos mediante un panel inferior deslizable sin perder el contexto geográfico.</p>
+            </div>
+            <div class="process-step-item">
+                <div class="step-number">03</div>
+                <h3>Capas y Estilos de Mapa</h3>
+                <p>Soporte de modos de mapa (normal, satelital y oscuro) según las condiciones de visibilidad en terreno.</p>
+            </div>
+            <div class="process-step-item">
+                <div class="step-number">04</div>
+                <h3>Filtros &amp; Clústeres</h3>
+                <p>Separación visual clara entre clústeres de puntos e incidencias activas mediante filtros visibles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flujo Principal (Diagrama CSS/HTML accesible) -->
+    <section class="project-overview" style="background:#fafafa; border-top:1px solid #eee; border-bottom:1px solid #eee;">
+        <div style="max-width:1100px; margin:0 auto;">
+            <h3 style="font-size:1.6rem; font-weight:700; color:var(--text-dark); margin-bottom:2rem; text-align:center;">Flujo Principal de la Ronda</h3>
+            
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:0.8rem; flex-wrap:wrap;">
+                <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:1.2rem; flex:1; min-width:150px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+                    <div style="font-size:0.75rem; font-weight:700; color:#0096c7; text-transform:uppercase; margin-bottom:0.3rem;">Paso 1</div>
+                    <div style="font-size:0.95rem; font-weight:600; color:#0f172a;">Iniciar ronda</div>
+                </div>
+                <div style="color:#94a3b8; font-weight:700;">→</div>
+                <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:1.2rem; flex:1; min-width:150px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+                    <div style="font-size:0.75rem; font-weight:700; color:#0096c7; text-transform:uppercase; margin-bottom:0.3rem;">Paso 2</div>
+                    <div style="font-size:0.95rem; font-weight:600; color:#0f172a;">Visualizar puntos</div>
+                </div>
+                <div style="color:#94a3b8; font-weight:700;">→</div>
+                <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:1.2rem; flex:1; min-width:150px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+                    <div style="font-size:0.75rem; font-weight:700; color:#0096c7; text-transform:uppercase; margin-bottom:0.3rem;">Paso 3</div>
+                    <div style="font-size:0.95rem; font-weight:600; color:#0f172a;">Navegar al punto</div>
+                </div>
+                <div style="color:#94a3b8; font-weight:700;">→</div>
+                <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:1.2rem; flex:1; min-width:150px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+                    <div style="font-size:0.75rem; font-weight:700; color:#0096c7; text-transform:uppercase; margin-bottom:0.3rem;">Paso 4</div>
+                    <div style="font-size:0.95rem; font-weight:600; color:#0f172a;">Registrar actividad</div>
+                </div>
+                <div style="color:#94a3b8; font-weight:700;">→</div>
+                <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:1.2rem; flex:1; min-width:150px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+                    <div style="font-size:0.75rem; font-weight:700; color:#0096c7; text-transform:uppercase; margin-bottom:0.3rem;">Paso 5</div>
+                    <div style="font-size:0.95rem; font-weight:600; color:#0f172a;">Actualizar progreso</div>
+                </div>
+                <div style="color:#94a3b8; font-weight:700;">→</div>
+                <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:1.2rem; flex:1; min-width:150px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+                    <div style="font-size:0.75rem; font-weight:700; color:#0096c7; text-transform:uppercase; margin-bottom:0.3rem;">Paso 6</div>
+                    <div style="font-size:0.95rem; font-weight:600; color:#0f172a;">Finalizar ronda</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados y Aprendizaje -->
+    <section class="project-results">
+        <div style="max-width:900px;margin:0 auto;text-align:center;">
+            <h3 style="font-size:2rem;font-weight:700;margin-bottom:1.5rem;color:var(--text-dark);">Resultado del Producto</h3>
+            <p style="font-size:1.1rem;color:var(--text-light);line-height:1.8;font-weight:300;">
+                El proyecto permitió convertir un conjunto de tareas geográficas y operativas en una experiencia móvil centrada en el mapa, con controles, filtros y estados de ronda integrados.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA Contacto -->
+    <section class="project-cta">
+        <h2>¿Conversamos sobre una oportunidad laboral?</h2>
+        <p>Estoy disponible para integrarme a equipos de producto como Product Designer.</p>
+        <a href="mailto:samueldavidcasaran@gmail.com" class="btn btn-primary btn-lg" style="background:#00e0ff;color:#0f172a;font-weight:700;">Enviar Correo</a>
+    </section>
+
+</body>
+</html>
