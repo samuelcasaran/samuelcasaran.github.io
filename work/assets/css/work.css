@@ -22,25 +22,19 @@
 }
 
 .floating-navbar .nav-item {
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
     align-items: center;
-    gap: 0.22rem;
-    padding: 0.55rem 1.4rem;
+    justify-content: center;
+    padding: 0.6rem 1.4rem;
     border-radius: 100px;
     text-decoration: none;
     color: #64748b;
-    font-size: 0.72rem;
-    font-weight: 600;
+    font-size: 0.85rem;
+    font-weight: 500;
     letter-spacing: 0.2px;
     transition: all 0.2s ease;
     white-space: nowrap;
     line-height: 1;
-}
-
-.floating-navbar .nav-item svg {
-    transition: all 0.2s ease;
-    stroke: currentColor;
 }
 
 .floating-navbar .nav-item:hover {
@@ -52,10 +46,6 @@
     background: #0f172a;
     color: #ffffff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
-}
-
-.floating-navbar .nav-item.active svg {
-    stroke: #ffffff;
 }
 
 /* Prevent footer from hiding under floating tab bar */
