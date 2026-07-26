@@ -866,6 +866,37 @@ body {
 }
 
 /* ── Contacto Section ── */
+.cta-final {
+    background: #0f172a !important;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.cta-final-eyebrow {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #00b4d8 !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.5rem;
+}
+
+.cta-final h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff !important;
+    letter-spacing: -1px;
+    margin-bottom: 0.8rem;
+}
+
+.cta-final p {
+    font-size: 1.05rem;
+    color: #94a3b8 !important;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.6;
+}
+
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -884,21 +915,22 @@ body {
 
 .contact-card-label {
     font-size: 0.75rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: #94a3b8 !important;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
     margin-bottom: 0.4rem;
+    font-weight: 600;
 }
 
 .contact-card-val {
     font-size: 0.95rem;
     font-weight: 600;
-    color: #ffffff;
+    color: #ffffff !important;
     word-break: break-word;
 }
 
 .contact-card-val a {
-    color: #00e0ff;
+    color: #38bdf8 !important;
     text-decoration: none;
 }
 
