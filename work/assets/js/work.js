@@ -24,21 +24,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ── Keyboard Accessibility: ESC closes open modal ──
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-            closeAllModals();
-        }
-    });
+    // ── Floating Navbar Active Link Scroll Spy ──
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('.floating-navbar .nav-item');
 
-    // ── Click outside modal container closes modal ──
-    document.querySelectorAll('.modal-overlay').forEach(overlay => {
-        overlay.addEventListener('click', (e) => {
-            if (e.target === overlay) {
-                closeAllModals();
-            }
-        });
-    });
+    if (sections.length > 0 && navItems.length > 0) {
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -60% 0px',
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navItems.forEach(item => {
+                        if (item.getAttribute('data-section') === id) {
+                            item.classList.add('active');
+                        } else {
+                            item.classList.remove('active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => observer.observe(section));
+    }
 });
 
 /**
